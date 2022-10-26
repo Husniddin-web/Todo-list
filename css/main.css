@@ -1,0 +1,127 @@
+body{
+    scroll-behavior: smooth;
+    background-color: beige;
+    font-family: monospace;
+}
+ul, li{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+.box__title{
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 30px;
+}
+.js-input{
+    margin-left: 150px;
+    width: 50%;
+    padding: 10px;
+}
+.btn-success{
+    padding: 12px 18px;
+    right: 200px;
+    top: 105px;
+    position: absolute;
+    color: aliceblue;
+    font-size: 15px;
+}
+.wrapper{
+    margin-top: 100px;
+}
+.bg-danger,
+.bg-warning{
+    color: aliceblue;
+    margin-left: 10px;
+    font-size: 15px;
+}
+.card{
+    width: 70%;
+    height: 200px;
+    margin: 0 auto;
+}
+/*  TO DO LIST */
+.todo-wrapper{
+    background-color: rgba(0,0,0,0.2);
+    backdrop-filter: blur(30px);
+    width: 70%;
+    margin: 0 auto;
+    border-radius:  10px;
+    padding-top: 10px;
+}
+
+.swipe{
+   height: 2px ;
+   width: 64%;
+   background-color: black;
+   position: absolute;
+   top:90px;
+   left: 60px;
+   transition: all .6s ease;
+}
+#ww{
+    transform: translateX(200%);
+}
+
+
+
+/* ============  TODO LIST  ============ */
+.todo-wrapper{
+    margin-top: 40px;
+    overflow-x: hidden;
+}
+.todo-list{
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    gap: 20px;
+}
+.todo-item{
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+    padding: 20px;
+    background-color: skyblue;
+    border-radius: 10px;
+    width: 100%;
+}
+#check{
+    width: 20px;
+    height: 30px;
+    margin-right: 20px;
+}
+#todo-text{
+    width: 80%;
+}
+
+
+
+.done{
+    background-color: cornflowerblue;
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 20px;
+    padding: 30px;
+    border-radius: 10px;
+}
+.done-list{
+    display: flex;
+    justify-content: space-around;
+}
+.do,.did{
+    color: black;
+    font-size: 20px;
+}
+/* INPUT  */
+#inputText{
+    outline: none;
+    border: none;
+    padding: 10px;
+    background-color: transparent;
+    width: 80%;
+}
+.text{
+    text-align: center;
+    margin-top: 50px;
+}
