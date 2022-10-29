@@ -125,3 +125,16 @@ a{
     text-align: center;
     margin-top: 50px;
 }
+.label{
+    position: relative;
+}
+.line{
+    position: absolute;
+    width: 65%; 
+    height: 2px;
+    background-color: black;
+    transition: all .3s ease;
+}
+.tran{
+opacity: 0;
+}

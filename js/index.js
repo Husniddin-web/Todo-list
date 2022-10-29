@@ -8,7 +8,8 @@ let formEl = $('.js-form');
 let inputEl = $('.js-input')
 let templete = $('.clone').content
 let wrapper = $('.todo-list')
-let counter = $('.counter')
+let counter = $('.counter');
+let done = $('.done')
 
 
 
@@ -82,14 +83,6 @@ function render(todos) {
             render(allTodos)
         })
         editBtn.addEventListener('click', e => {
-            let edit = e.target
-            if (edit.textContent == 'Edit') {
-
-                edit.textContent = 'Save'
-            }
-            else if (edit.textContent = 'Save') {
-                edit.textContent = 'Edit'
-            }
 
         })
         // clone.appendChild(line)
@@ -97,3 +90,33 @@ function render(todos) {
     });
 }
 // ======RENDER =====//
+
+// * EDIT * //
+function edit(id) {
+
+}
+
+
+
+
+
+
+
+//    ======== LINE ON CHECKBOX =======//
+let checkBox = $('.todo-checkbox')
+wrapper.addEventListener('click', e => {
+    let target = e.target
+    if (target == 'INPUT') {
+        $('#line').classList.toggle('tran');
+    }
+
+    if (target.textContent == 'Edit') {
+        
+        target.textContent = 'Save'
+    }
+    else if (target.textContent = 'Save') {
+        target.textContent = 'Edit'
+    }
+
+
+})
