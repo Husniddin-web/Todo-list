@@ -110,13 +110,13 @@ wrapper.addEventListener('click', e => {
         $('#line').classList.toggle('tran');
     }
 
-    if (target.textContent == 'Edit') {
-        
-        target.textContent = 'Save'
-    }
-    else if (target.textContent = 'Save') {
-        target.textContent = 'Edit'
-    }
+    // if (target.textContent == 'Edit') {
+
+    //     target.textContent = 'Save'
+    // }
+    // else if (target.textContent = 'Save') {
+    //     target.textContent = 'Edit'
+    // }
 
 
 })
